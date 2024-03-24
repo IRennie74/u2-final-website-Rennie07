@@ -109,6 +109,9 @@ body {
   }
   */
   
+  /*
+  Grid section 
+  */
   header {
     grid-column: 1/4;
     position: sticky; top: 0px;
@@ -129,6 +132,10 @@ body {
     grid-column: 1/span 3;
   }
 
+
+  /* 
+  Images in the about page / essay 
+  */
   #image1 { /* image1 div*/
     display: flex;    
     border-radius: 25px;
@@ -186,9 +193,12 @@ body {
     border-radius: 5%;
   }
 
-  /* <uniquifier>: Use a unique and descriptive class name
-     <weight>: Use a value from 100 to 900 */
 
+  /* 
+  Google Font
+    <uniquifier>: Use a unique and descriptive class name
+     <weight>: Use a value from 100 to 900 
+  */
 .roboto-slab-h1 {
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
@@ -198,6 +208,58 @@ body {
 .roboto-slab-h2 { /*google font */
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
+  }
+
+
+  /* 
+  Location section of the contact page 
+  */
+  #locationSection {
+    align-content: center;
+    border-radius: 25px;
+    border: 8px solid #1c1b1b;
+    margin-left: 80px;
+  }
+  #locationSection>h2 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 3px;
+  }
+  #map>iframe {
+    border-radius: 5%;
+    padding: 12px;
+  }
+  #map {
+    border-radius: 25px;
+    border: 8px solid #1c1b1b;
+    margin-top: 40px;
+    margin-left: 80px;
+  }
+
+
+  /* 
+  Contact me section of the contact page 
+  */
+  #contactSection {
+    align-content: center;
+    border-radius: 25px;
+    border: 8px solid #1c1b1b;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  #contactSection>h2 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 3px;
+  }
+  #contactText {
+    border-radius: 25px;
+    border: 8px solid #1c1b1b;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
   }
