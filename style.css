@@ -33,6 +33,9 @@
 body {
     margin: 0;
     background-color: #141414;
+    height: 95vh;
+    display: grid;
+    grid-template: auto 1fr auto/auto 1fr auto;
 }
 
 #essay {
@@ -71,13 +74,6 @@ body {
     text-align: justify;
 }
 
-
-
-footer {
-    background-color: #141414;
-    display: flex;
-    justify-content: center;
-}
 .logo {
     width: 35px;
     height: 35px;
@@ -106,7 +102,35 @@ footer {
     background-color: red;
   }
   */
-  #image1 {
-    height: 200px;
-    width: 200px;
+  #image1 { /* image1 div*/
+    display: flex;    
+    border-radius: 25px;
+    border: 8px solid #1c1b1b;
+    padding: 7px;
+    width: min-content;
+
+  }
+  #image1>img { /* image1 image*/
+    height: 400px;
+    width: 400px;
+    border-radius: 5%;
+  }
+  header {
+    grid-column: 1/4;
+    position: sticky; top: 0px;
+  }
+  #section1 {
+
+  }
+  #section2 {
+
+  }
+  #section3 {
+    
+  }
+  footer {
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    grid-column: 1/span 3;
   }
