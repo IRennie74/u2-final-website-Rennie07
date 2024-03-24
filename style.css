@@ -2,12 +2,14 @@
     padding: 3px;
     position: sticky; top: 0px;
     background-color: #141414;
+    margin: 0;
 }
 
 #navTitle { /* Styles the main section of the title on the nav bar*/
     display: flex;
     justify-content: center;
     position: sticky; top: 0px;
+    margin: 0;
 }
 
 #navTitle>h1 {
@@ -19,14 +21,18 @@
     display: flex;
     justify-content: left;
     position: sticky; top: 0px;
+    margin: 0;
 }
-
-#navLinksBar>a { /* links header */
+.pages{
+    margin-left: 25px;
+    display: flex;
+}
+.pages>a { /* links header */
     margin-left: 20px;
     text-decoration: none;
     color: white;
 }
-#navLinksBar>a:hover {
+.pages>a:hover {
     color: #83D350;
 }
 
@@ -42,14 +48,14 @@ body {
     border-radius: 25px;
     border: 8px solid #1c1b1b;
     padding: 15px;
-    width: 100%;
-    height: 100%;
+    width: min-content;
+    height: min-content;
     font-family: 'Times New Roman', Times, serif;
     color: white;
     margin: auto;
     justify-content: center;
     width: calc(100% - 40px);
-    max-width: 600px;
+    max-width: 800px;
 }
 #essay>h1 {
     display: block;
@@ -102,28 +108,16 @@ body {
     background-color: red;
   }
   */
-  #image1 { /* image1 div*/
-    display: flex;    
-    border-radius: 25px;
-    border: 8px solid #1c1b1b;
-    padding: 7px;
-    width: min-content;
-
-  }
-  #image1>img { /* image1 image*/
-    height: 400px;
-    width: 400px;
-    border-radius: 5%;
-  }
+  
   header {
     grid-column: 1/4;
     position: sticky; top: 0px;
   }
   #section1 {
-
+    
   }
   #section2 {
-
+    
   }
   #section3 {
     
@@ -133,4 +127,77 @@ body {
     display: flex;
     justify-content: center;
     grid-column: 1/span 3;
+  }
+
+  #image1 { /* image1 div*/
+    display: flex;    
+    border-radius: 25px;
+    border: 8px solid #1c1b1b;
+    padding: 7px;
+    width: min-content;
+    margin-left: 23px;
+  }
+  #image1>img { /* image1 image*/
+    height: 450px;
+    width: 450px;
+    border-radius: 5%;
+  }
+  #image2 { /* image1 div*/
+    display: flex;    
+    border-radius: 25px;
+    border: 8px solid #1c1b1b;
+    padding: 7px;
+    width: min-content;
+    margin-right: 23px;
+    margin-top: 300px;
+  }
+
+  #image2>img { /* image1 image*/
+    height: 450px;
+    width: 450px;
+    border-radius: 5%;
+  }
+  #image3 { /* image1 div*/
+    display: flex;    
+    border-radius: 25px;
+    border: 8px solid #1c1b1b;
+    padding: 7px;
+    width: min-content;
+    margin-left: 23px;
+    margin-top: 200px;
+  }
+  #image3>img { /* image1 image*/
+    height: 450px;
+    width: 450px;
+    border-radius: 5%;
+  }
+  #image4 { /* image1 div*/
+    display: flex;    
+    border-radius: 25px;
+    border: 8px solid #1c1b1b;
+    padding: 7px;
+    width: min-content;
+    margin-left: 23px;
+    margin-top: 400px;
+  }
+  #image4>img { /* image1 image*/
+    height: 450px;
+    width: 450px;
+    border-radius: 5%;
+  }
+
+  /* <uniquifier>: Use a unique and descriptive class name
+     <weight>: Use a value from 100 to 900 */
+
+.roboto-slab-h1 {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.roboto-slab-h2 {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
   }
